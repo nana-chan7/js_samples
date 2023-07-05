@@ -1,3 +1,6 @@
+// 2023-06-28 2.week3
+// 2023-07-05 2.week4
+
 console.log("---二項演算---")
 var hp = 5;     // ; はなくてもいいがある方がいい
 hp = hp + 3;
@@ -71,3 +74,9 @@ hp = 5;
 message = (hp < 10) ? "ピンチ！" : "大丈夫";
 console.log(message)
 
+
+// 課題 03
+var student_name = "石塚奈々";
+var student_number = 220098;
+var message = "「" + student_name + "」の学籍番号は「" + student_number +"」です。"
+console.log(message);

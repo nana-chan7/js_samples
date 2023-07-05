@@ -1,5 +1,6 @@
-console.log("Hello, YSE!!!")
+// 2023-06-28 2.week3
 
+console.log("Hello, YSE!!!")
 
 // コメントアウト
 // Ctrl + /  (Windows)

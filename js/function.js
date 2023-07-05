@@ -1,3 +1,5 @@
+// 2023-06-28 2.week3
+
 function calculateTotalPrice(price, amount) { // function statment
     var result = price * amount;
     return result;

@@ -1,3 +1,5 @@
+// 2023-06-28 2.week3
+
 var monster
 monster = "スライム"
 console.log(monster)
