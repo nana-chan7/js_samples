@@ -80,3 +80,4 @@ var student_name = "石塚奈々";
 var student_number = 220098;
 var message = "「" + student_name + "」の学籍番号は「" + student_number +"」です。"
 console.log(message);
+// ※ 学籍番号も文字列にした方がよい
