@@ -14,6 +14,17 @@ if (price <= 0) { // If-Else Statement
 }
 console.log(message)
 
+// 日付処理
+// 現在の日付オブジェクト
+var date = new Date()
+console.log(date)
+var year = date.getFullYear()
+var month = date.getMonth() + 1 // 月は０始まりなので１を足す
+var day = date.getDate()
+var weekIndex = date.getDay()
+
+var dateString = year + "/" + month + "/" + day
+document.getElementById("today").innerHTML = dateString
 
 // Switch
 var weekday = "水"
