@@ -24,11 +24,16 @@ var day = date.getDate()
 // Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
 var weekIndex = date.getDay() // 日曜始まり:０～
 
+// 配列 array
+const weekOfDays = ["日", "月", "火", "水", "木", "金", "土"]
+
 var dateString = year + "/" + month + "/" + day
 document.getElementById("today").innerHTML = dateString
 
 // Switch
-var weekday = "水"
+var weekday = weekOfDays[weekIndex]
+document.getElementById("weekday").innerHTML = weekday
+
 var garbage = ""
 
 // switch (weekday) { // Switch Statement
