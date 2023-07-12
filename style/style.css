@@ -1,0 +1,31 @@
+#image-container {
+    width: 32px;
+    height: 32px;
+    background-image: url(./images/hone.png);
+    background-repeat: no-repeat;
+}
+
+#image-container:nth-child(1) {
+    background-position: 0 0;
+}
+
+#image-container:nth-child(2) {
+    background-position: -32px 0;
+}
+
+#image-container:nth-child(3) {
+    background-position: -64px 0;
+}
+
+/* 縦方向にも同様に設定 */
+#image-container:nth-child(n+4):nth-child(-n+6) {
+    background-position-y: -32px;
+}
+
+#image-container:nth-child(n+7):nth-child(-n+9) {
+    background-position-y: -64px;
+}
+
+#image-container:nth-child(n+10):nth-child(-n+12) {
+    background-position-y: -96px;
+}
