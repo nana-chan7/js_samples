@@ -1,5 +1,6 @@
 // 2023-07-19 2.week6
 
+// 連想配列
 var character = {
     id: 1,
     name: "アリス",
@@ -46,3 +47,4 @@ var users=[
         email: "user3@test.com", 
     },
 ]
+console.log(users[1].name)
