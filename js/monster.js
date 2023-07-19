@@ -24,3 +24,29 @@ a.href = "https://www.google.com/search?q=" + monsterElement1.innerHTML
 a.target = "_blank" // 新しいブラウザで開く
 a.innerHTML = monsterElement1.innerHTML
 stage.appendChild(a)
+
+
+// モンスターリスト
+function createMonserElement(name, imageName){
+    var div = document.createElement("div")
+    var p = document.createElement("p")
+    var img = document.createElement("img")
+
+    // モンスター名を設定
+    p.innerHTML = name
+    // 画像ファイル設定
+    img.src = "images/" + imageName
+
+    // div に追加
+    div.appendChild(p)
+    div.appendChild(img)
+
+    // id = monster-list に追加
+    monsterList.appendChild(div)
+}
+
+var monsterList = document.getElementById("monster-list")
+createMonserElement("モンスター１", "monster_006.png")
+
+createMonserElement("モンスター２", "monster_022.png")
+createMonserElement("モンスター３", "monster_040.png")
