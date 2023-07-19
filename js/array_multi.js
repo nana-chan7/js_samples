@@ -16,3 +16,13 @@ console.log(character.level)
 
 character.weapon = "ブロンズナイフ"
 console.log(character)
+
+
+// 多次元配列
+var rows = [
+    [90, 78, 82,],
+    [62, 70, 68,],
+    [68, 88, 72,],
+]
+
+console.log(rows[1][1])
