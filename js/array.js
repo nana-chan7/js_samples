@@ -9,3 +9,8 @@ console.log(selectDrink)
 // 個数
 var count = drinks.length
 console.log(count)
+
+// push()
+console.log("--- push() ---")
+drinks.push("炭酸水")
+console.log(drinks)
