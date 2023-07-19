@@ -1,3 +1,5 @@
+// 夏休み課題
+
 var rarities = [
     { type: "N", name: "Normal", probability: 70 },
     { type: "R", name: "Rare", probability: 20 },
