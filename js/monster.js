@@ -41,7 +41,13 @@ function createMonserElement(name, imageName){
     div.appendChild(p)
     div.appendChild(img)
 
-    // id = monster-list に追加
+    // class=col-4
+    div.setAttribute("class", "col-4")          //1
+    // div.className = "col-4"                  //2
+    // div.classList.add("col-4")               //3
+    // div.classList.add("monster")
+
+    // id=monster-list に追加
     monsterList.appendChild(div)
 }
 
