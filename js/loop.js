@@ -51,3 +51,27 @@ function calculate(value){
     console.log(answer)
 }
 processArray(numbers, calculate)
+
+
+// anonymous function
+console.log("--- anonymous function ---")
+processArray(numbers, function(value)
+    {
+        var answer = value * 3
+        console.log(answer)  
+})
+
+
+// arrow function
+console.log("--- arrow function ---")
+processArray(numbers, (value) =>{
+    var answer = (value - 3) * 2
+    console.log(answer)
+})
+
+
+// 授業>>>
+// ・コールバック関数は無名関数やアロー関数などで使うことが多い
+// ・function の引数にそのまま別の関数を入れてもよいが、callback にしておくことで、
+//      同じ function の中で違う 関数を呼び出せる(大規模開発などはこれが多いらしい)
+// ・開発ではあまり if文は使わないらしい 
