@@ -1,4 +1,5 @@
 // 2023-08-30 2.week7
+// 夏休み明け →
 
 const person = {
     name: "Alice",
