@@ -1,6 +1,9 @@
 // 2023-07-19 2.week6
 // 夏休み課題
 
+// 2023-08-30 2.week7
+// 解説
+
 // Array
 var users = [
     { id: 1, name: 'User1', email: 'user1@example.com', password: 'xxxxxx' },
@@ -50,6 +53,7 @@ function updateTable() {
     var tableBody = document.getElementById('user_table_body');
     tableBody.innerHTML = ''; // テーブルの中身をクリア
 
+    // 解説: for-of
     for (const user of users) {
         var row = document.createElement('tr');
 
@@ -69,5 +73,6 @@ function updateTable() {
     }
 }
 
+// 解説: なくてもいい
 // ページロード時にデータを表示
-window.addEventListener('DOMContentLoaded', loadUsers);
+// window.addEventListener('DOMContentLoaded', loadUsers);
