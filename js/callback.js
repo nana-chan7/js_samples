@@ -57,6 +57,18 @@ items.forEach(item => {
 });
 
 
+// map (配列を繰り返して新しい配列を作成)
+console.log("--- map ---")
+var newItems = items.map(function(item){
+    return {
+        id: item.id,
+        name: item.name,
+        price: item.price,
+        withoutTaxPrice: Math.floor(item.price / 1.1),
+    }
+});
+console.log(newItems)
+
 // 授業>>>
 // ・コールバック関数は無名関数やアロー関数などで使うことが多い
 // ・function の引数にそのまま別の関数を入れてもよいが、callback にしておくことで、
