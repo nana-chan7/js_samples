@@ -1,3 +1,6 @@
+// 2023-08-30 2.week7
+// 夏休み課題 解説
+
 var rarities = [
     { type: "N", name: "Normal", probability: 70 },
     { type: "R", name: "Rare", probability: 20 },
