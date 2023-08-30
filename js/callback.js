@@ -69,6 +69,22 @@ var newItems = items.map(function(item){
 });
 console.log(newItems)
 
+
+// filter(フィルタリング)
+console.log("--- filter ---")
+var newItems = items.filter((item) => item.price > 300)
+console.log(newItems)
+
+
+
+
+
+
+
+
+
+
+
 // 授業>>>
 // ・コールバック関数は無名関数やアロー関数などで使うことが多い
 // ・function の引数にそのまま別の関数を入れてもよいが、callback にしておくことで、

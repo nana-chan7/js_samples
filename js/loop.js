@@ -106,6 +106,15 @@ var newItems = items.map(function(item){
 console.log(newItems)
 
 
+// filter(フィルタリング)
+console.log("--- filter ---")
+var newItems = items.filter((item) => item.price > 300)
+console.log(newItems)
+
+
+
+
+
 
 
 // 授業>>>
