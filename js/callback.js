@@ -76,7 +76,21 @@ var newItems = items.filter((item) => item.price > 300)
 console.log(newItems)
 
 
+// reduce(配列を繰り返し、 コールバック関数で再帰的に処理)
+console.log("--- reduce ---")
+var rarities = [
+    { type: "N", name: "Normal", probability: 70 },
+    { type: "R", name: "Rare", probability: 20 },
+    { type: "SR", name: "Super Rare", probability: 6 },
+    { type: "SSR", name: "Super Special Rare", probability: 3 },
+    { type: "LR", name: "Legend", probability: 1 },
+];
 
+var totalProbability = rarities.reduce(function(sum, item){
+    return sum + item.probability;
+}, 0);
+
+console.log(totalProbability)
 
 
 
