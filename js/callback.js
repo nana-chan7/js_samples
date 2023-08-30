@@ -9,6 +9,7 @@ function processArray(values, callback){
 
 const numbers = [1, 2, 3, 4, 5]
 
+console.log("--- function ---")
 function calculate(value){
     var answer = value * 2
     console.log(answer)
@@ -38,4 +39,4 @@ processArray(numbers, (value) =>{
 // ・コールバック関数は無名関数やアロー関数などで使うことが多い
 // ・function の引数にそのまま別の関数を入れてもよいが、callback にしておくことで、
 //      同じ function の中で違う 関数を呼び出せる(大規模開発などはこれが多いらしい)
-// ・開発ではあまり if文は使わないらしい 
+// ・開発ではあまり if文は使わないらしい  

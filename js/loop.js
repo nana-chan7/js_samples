@@ -46,6 +46,7 @@ function processArray(values, callback){
 
 const numbers = [1, 2, 3, 4, 5]
 
+console.log("--- function ---")
 function calculate(value){
     var answer = value * 2
     console.log(answer)
