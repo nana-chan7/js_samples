@@ -1,3 +1,6 @@
+// 2023-08-30 2.week7
+// 夏休み明け →
+
 // コールバック関数
 function processArray(values, callback){
     // イテレータブルなデータを繰り返し
