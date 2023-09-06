@@ -9,6 +9,7 @@ function sayFunction(element){
     messageElement.innerHTML = element.name
 }
 
+// ここよく出る ↓
 const person = {
     name: "Jhon",
     sayHello1: function(){
