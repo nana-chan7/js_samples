@@ -4,12 +4,12 @@ const messageElement = document.getElementById('message')
 
 this.name = "Bob"
 
-function sayFunction(element){
+function sayFunction(element){ //Chris
     console.log(element)
     messageElement.innerHTML = element.name
 }
 
-// ここよく出る ↓
+// ここよく出る ↓ テスト
 const person = {
     name: "Jhon",
     sayHello1: function(){
@@ -21,15 +21,17 @@ const person = {
     },
 }
 
-function sayAnonymous(element){
+function sayAnonymous(element){ // Jhon
     person.sayHello1()
 }
 
-function sayArrow(element){
+function sayArrow(element){ // Bob
     person.sayHello2()
 }
 
-function Person(name){
+// コンストラクタのようなもの
+function Person(name){ // Alice
+    console.log(this) // Person
     this.name = name
     messageElement.innerHTML = this.name
 }

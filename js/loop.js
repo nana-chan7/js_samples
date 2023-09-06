@@ -71,11 +71,11 @@ processArray(numbers, (value) =>{
 
 // forEach
 console.log("--- forEach ---")
-drinks.forEach((drink) => {
+drinks.forEach((drink) => { // アロー関数
     console.log(drink)
 });
 // ↑↓ どちらでも
-drinks.forEach(function(drink){
+drinks.forEach(function(drink){ // 無名関数
     console.log(drink)
 });
 

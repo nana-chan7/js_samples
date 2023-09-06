@@ -4,7 +4,7 @@
 function inputUserName(){
     console.log("Change!!!")
     // console.log("userNameElement")
-    var userName = userNameElement.value
+    var userName = userNameElement.value // ※userNameElement.innerText だと中身取れない
     console.log(userName)
     var message = userName + "さん、ようこそ！"
     messageElement.innerHTML = message

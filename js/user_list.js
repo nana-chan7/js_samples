@@ -16,6 +16,10 @@ function loadUsers() {
     tableBody.innerHTML = ''; // テーブルの中身をクリア
 
     for (const user of users) {
+    // for (const index in users){
+    
+        //var user = users[index]
+
         var row = document.createElement('tr');
 
         var idCell = document.createElement('td');
@@ -75,4 +79,4 @@ function updateTable() {
 
 // 解説: なくてもいい
 // ページロード時にデータを表示
-// window.addEventListener('DOMContentLoaded', loadUsers);
+window.addEventListener('DOMContentLoaded', loadUsers);

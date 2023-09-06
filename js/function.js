@@ -28,16 +28,16 @@ const hello2 = (name) => {
 var message = hello2("東京 太郎");
 console.log(message);
 
+
 // html がすべて読み込まれてから実行される(誤動作がなくなる？)
 // window.onload = function(){
 //     console.log("東京");
 // }
-
 window.onload = () =>{
     console.log("東京");
     var message = hello2("YSE");
     console.log(message);
 }
-
+// ↑ アロー関数でも無名関数でもいい
 
 console.log("横浜");
