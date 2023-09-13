@@ -1,3 +1,5 @@
+// 2023-09-13 2.week9
+
 var cities = document.getElementsByClassName("city")
 console.log(cities)
 
