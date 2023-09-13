@@ -1,5 +1,7 @@
 // 2023-09-13 2.week9
 
+// <li> にクラス名
+console.log("<<< class: city >>>")
 var cities = document.getElementsByClassName("city")
 console.log(cities)
 
@@ -22,7 +24,21 @@ for (const city of cities) {
     console.log(city.innerHTML)
 }
 
-console.log("--- for Each ---")
+console.log("--- forEach ---")
 Array.from(cities).forEach(city => {
     console.log(city.innerHTML)
 });
+
+
+// <ul> にクラス名
+console.log("<<< class: menus >>>")
+var menus = document.getElementsByClassName("menus")
+console.log(menus)
+
+console.log("--- for-of / children ---")
+for (const menu of menus) {
+    console.log(menu)
+    for (const item of menu.children) {
+        console.log(item.innerHTML)
+    }
+}
