@@ -35,4 +35,4 @@ console.log(items)
 // 'ul.menus > li' ulタグmenusクラスの子(>: 親子関係) li
 
 // jQuery だと↓
-// $('ul.menus > li)
+// $('ul.menus > li')
