@@ -61,13 +61,19 @@ document.getElementById('mouse-move-area')
 
 
 // keyboard event
-document.addEventListener('keydown', function(event){
+document.addEventListener('keydown', function(event){ // ← event(e): イベントオブジェクト
     console.log(event.keyCode)
     document.getElementById('key-code-area')
             .innerHTML = event.keyCode    
 })
 
-
+// keyboard event ☆ テストに出る
+const handler = function(event) {
+    console.log(event.keyCode)
+    document.getElementById('key-code-area')
+    .innerHTML = event.keyCode
+}
+document.addEventListener('keydown', handler)
 
 
 

@@ -12,7 +12,7 @@ var h2 = document.querySelectorAll('h2')
 console.log(h2[0]) // インデックスを指定する
 console.log(h2[1])
 
-// id を指定
+// id を指定 (※ idは必ず一つ)
 console.log("--- id(#)で指定 ---")
 var cityTitle = document.querySelector('#city-title')
 // var cityTitle = document.getElementById('city-title')  // ※ 同じ処理
@@ -20,11 +20,12 @@ console.log(cityTitle)
 
 // 表示される型が違う
 console.log("-----------")
-var cities = document.getElementsByClassName('city')
+var cities = document.getElementsByClassName('city') // (今回のテストには出ない)
 console.log(cities)
 var cities = document.querySelectorAll('.city') 
 console.log(cities)
 
+// 繰り返し処理
 for (const city of cities) {
     console.log(city.innerHTML)
 }
@@ -36,3 +37,4 @@ console.log(items)
 
 // jQuery だと↓
 // $('ul.menus > li')
+

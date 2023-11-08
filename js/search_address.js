@@ -38,10 +38,11 @@ const searchAPI = async (zipcode) => {
     const uri = ZIPCLOUD_API_URL + "?" + query_param;
     console.log(uri);
     // データ取得
-    const response = await fetch(uri)
+    const response = await fetch(uri) 
     // JSON -> Array & Object
     const data = await response.json()
     return data
+    // ※ awaitがないと動かない(処理を待たずに次の処理に行ってしまうから)
 }
 
 // クリックイベントハンドラ
